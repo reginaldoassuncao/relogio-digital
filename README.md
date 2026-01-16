@@ -1,16 +1,28 @@
-# React + Vite
+# Relógio Digital e Cronômetro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um aplicativo web simples de relógio digital e cronômetro construído com React e Vite. Ele foi desenvolvido como parte de um portfólio para demonstrar habilidades em:
 
-Currently, two official plugins are available:
+- React Hooks (`useState`, `useEffect`, `useRef`).
+- Manipulação de objetos de data e hora nativos (`Date()`).
+- Gerenciamento de intervalos de tempo com `setInterval`.
+- Design responsivo com CSS moderno.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## React Compiler
+- **Relógio Digital**: Exibição da hora local atualizada a cada segundo, incluindo a data completa.
+- **Cronômetro**: Medição de tempo com precisão de centésimos de segundo (10ms), com funcionalidades de iniciar, pausar e zerar.
+- **Interface Moderna**: Design escuro (dark mode) limpo e botões interativos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como Executar
 
-## Expanding the ESLint configuration
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+3. Abra `http://localhost:5173/` no seu navegador.
