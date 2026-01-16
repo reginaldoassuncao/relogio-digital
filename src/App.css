@@ -1,8 +1,15 @@
 #root {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -105,10 +112,29 @@ footer {
 }
 
 @media (max-width: 600px) {
+  #root {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .clock-display, .stopwatch-display {
     font-size: 3rem;
   }
-  .container {
-    padding: 1rem;
+
+  header h1 {
+    font-size: 1.8rem;
   }
 }
